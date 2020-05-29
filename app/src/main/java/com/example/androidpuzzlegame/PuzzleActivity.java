@@ -17,31 +17,38 @@ import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
+import com.example.androidpuzzlegame.Settings;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static java.lang.Math.abs;
 
 public class PuzzleActivity extends AppCompatActivity {
     ArrayList<PuzzlePiece> pieces;
+    public static int piecesNumber = 12;
+    public static int rows = 4;
+    public static int cols = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
-
         final RelativeLayout layout = findViewById(R.id.layout);
         final ImageView imageView = findViewById(R.id.imageView);
-
         Intent intent = getIntent();
         final String assetName = intent.getStringExtra("assetName");
+
 
         // run image related code after the view was laid out
         // to have all dimensions calculated
@@ -103,9 +110,9 @@ public class PuzzleActivity extends AppCompatActivity {
     }
 
     private ArrayList<PuzzlePiece> splitImage() {
-        int piecesNumber = 12;
-        int rows = 4;
-        int cols = 3;
+        int piecesNumber = PuzzleActivity.piecesNumber;
+        int rows = PuzzleActivity.rows;
+        int cols = PuzzleActivity.cols;
 
         ImageView imageView = findViewById(R.id.imageView);
         ArrayList<PuzzlePiece> pieces = new ArrayList<>(piecesNumber);
@@ -279,7 +286,14 @@ public class PuzzleActivity extends AppCompatActivity {
     }
     public void checkGameOver() {
         if (isGameOver()) {
-            finish();
+            Toast.makeText(PuzzleActivity.this, "Красавчик", Toast.LENGTH_SHORT).show();
+            Timer t = new Timer();
+            t.scheduleAtFixedRate(new TimerTask() {
+                public void run() {
+                    finish();
+                }
+            }, 2000, 100);
+
         }
     }
 

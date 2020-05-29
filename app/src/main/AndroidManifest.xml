@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.androidpuzzlegame">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PuzzleMain"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".PuzzleMain" />
         <activity android:name=".PuzzleActivity" />
         <activity
             android:name=".MainActivity"
