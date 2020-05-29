@@ -44,11 +44,12 @@ public class PuzzleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
+
+
         final RelativeLayout layout = findViewById(R.id.layout);
         final ImageView imageView = findViewById(R.id.imageView);
         Intent intent = getIntent();
         final String assetName = intent.getStringExtra("assetName");
-
 
         // run image related code after the view was laid out
         // to have all dimensions calculated
@@ -306,4 +307,5 @@ public class PuzzleActivity extends AppCompatActivity {
 
         return true;
     }
+
 }
