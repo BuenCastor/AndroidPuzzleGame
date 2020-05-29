@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "420253369299",
+    "firebase_url": "https://androidpuzzlegame-e8628.firebaseio.com",
+    "project_id": "androidpuzzlegame-e8628",
+    "storage_bucket": "androidpuzzlegame-e8628.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420253369299:android:f2f34bcfab0b2aa1e2e526",
+        "android_client_info": {
+          "package_name": "com.example.androidpuzzlegame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420253369299-4p6apa5kj0h69rq4tp3phqkgjvhadhiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidpuzzlegame",
+            "certificate_hash": "4c2b576a262253be2f9a85728a029c897354fe0a"
+          }
+        },
+        {
+          "client_id": "420253369299-hgbi4eg5k2a34f4itkt3401hife1hvki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaz_jCr2-qvCYGAg8OJ3Jm4bqxfpxkLBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420253369299-hgbi4eg5k2a34f4itkt3401hife1hvki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
