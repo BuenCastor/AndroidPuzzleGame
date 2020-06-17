@@ -14,7 +14,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"
-        android:background="@color/colorPrimary"
+        android:background="#FFFF00"
         android:text="Midle"
         app:layout_constraintEnd_toStartOf="@+id/Hard"
         app:layout_constraintTop_toBottomOf="@+id/myTextView" />
@@ -22,7 +22,7 @@
     <Button
         android:id="@+id/Hard"
         android:layout_width="70dp"
-        android:background="@color/colorPrimary"
+        android:background="#FFFF00"
         android:layout_height="39dp"
         android:layout_marginTop="80dp"
         android:text="Hard"
@@ -31,12 +31,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="82dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -57,7 +58,7 @@
         android:layout_width="70dp"
         android:layout_height="39dp"
         android:layout_marginTop="80dp"
-        android:background="@color/colorPrimary"
+        android:background="#FFFF00"
         android:text="Easy"
         app:layout_constraintEnd_toStartOf="@+id/Medium"
         app:layout_constraintHorizontal_bias="0.925"

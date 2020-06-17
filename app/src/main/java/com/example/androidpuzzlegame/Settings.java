@@ -44,8 +44,8 @@ public class Settings extends AppCompatActivity {
                 PuzzleActivity.cols = 5;
                 PuzzleActivity.rows = 6;
                 Hard.setBackgroundResource(R.color.colorAccent);
-                Light.setBackgroundResource(R.color.colorPrimary);
-                Medium.setBackgroundResource(R.color.colorPrimary);
+                Light.setBackgroundResource(R.color.yellow);
+                Medium.setBackgroundResource(R.color.yellow);
             }
         });
 
@@ -56,8 +56,8 @@ public class Settings extends AppCompatActivity {
                 PuzzleActivity.cols = 4;
                 PuzzleActivity.rows = 5;
                 Medium.setBackgroundResource(R.color.colorAccent);
-                Hard.setBackgroundResource(R.color.colorPrimary);
-                Light.setBackgroundResource(R.color.colorPrimary);
+                Hard.setBackgroundResource(R.color.yellow);
+                Light.setBackgroundResource(R.color.yellow);
             }
         });
 
@@ -68,8 +68,8 @@ public class Settings extends AppCompatActivity {
                 PuzzleActivity.cols = 3;
                 PuzzleActivity.rows = 4;
                 Light.setBackgroundResource(R.color.colorAccent);
-                Medium.setBackgroundResource(R.color.colorPrimary);
-                Hard.setBackgroundResource(R.color.colorPrimary);
+                Medium.setBackgroundResource(R.color.yellow);
+                Hard.setBackgroundResource(R.color.yellow);
             }
         });
 
